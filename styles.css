@@ -1,0 +1,206 @@
+/*CSS BY Brielle Smith*/
+
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --heading-font: "Kavoon", cursive;
+    --body-font: "Inter", sans-serif;
+
+    --h1-size: 3em;
+    --nav-h2-size: 1.5em;
+    --h2-size: 2em;
+    --h3-size: 1.5em;
+    --h4-size: 1.15em;
+
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--lavender);
+    font-family: var(--body-font);
+    color: var(--dark-gray);
+}
+main{
+    width: 50%;
+    margin: 0 auto;
+    max-width: 450px;
+    background-color: var(--purple);
+    margin-bottom: 2em;
+}
+header{
+    color: var(--white);
+    padding: 2em;
+    text-align: center;
+    padding: 1em;
+}
+/*Navigation Styles*/
+nav {
+    margin-top: 3em;
+    background-color: var(--yellow);
+    padding: .5em;
+}
+
+nav h2 {
+    font-size: var(--nav-h2-size);
+    color: black;
+    font-family: var(--body-font);
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    background-color: var(--white);
+    padding: .4em;
+    text-align: center;
+    margin: .5em;
+    font-weight: bold;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: var(--purple);
+    font-size: large;
+}
+/* Heading Styles */
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+    color: var(--white);
+    padding-left: 1em;
+}
+
+h3 {
+    font-size: var(--h3-size);
+    color: var(--yellow);
+    padding-left: 1em;
+}
+
+h4 {
+    font-size: var(--h4-size);
+    color: var(--purple);
+}
+
+section {
+    margin: 2em;
+    padding: 2em;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+/*Why Choose Us Section*/
+div.choose{
+    background-color: var(--pink);
+    padding: .2em;
+}
+div.choose ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+}
+
+div.choose li {
+    padding: 2em;
+    margin: .2em;
+    background-color: var(--teal);
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+div.choose ul li:nth-child(1) {
+    background-color: var(--teal);
+}
+
+div.choose ul li:nth-child(2) {
+    background-color: var(--lavender);
+}
+
+div.choose ul li:nth-child(3) {
+    background-color: var(--yellow);
+}
+
+div.choose ul li:nth-child(4) {
+    background-color: var(--white);
+}
+
+/*Pricing Section*/
+table {
+    background-color: var(--yellow);
+    margin:auto;
+   
+}
+th{
+    background-color: var(--yellow);
+    padding-bottom: 1em;
+}
+tr{
+    background-color: var(--white);
+}
+td{
+    padding: 1em;
+    
+}
+/*steps Section*/
+.steps{
+    background-color: var(--pink);
+    text-align: left;
+    padding: 1em;
+    margin-top: 1em;
+}
+.steps p{
+    color: var(--white);
+    padding-bottom: 1em;
+
+}
+.steps input[type="button"] {
+  background-color: white;
+  text-decoration: none;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px black;
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+}
+/*footer Section*/
+footer{
+    text-align: center;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    font-size: 10px;
+    padding: 3em;
+}
+footer a{
+    text-decoration: underline;
+    color: var(--white);
+    
+}
